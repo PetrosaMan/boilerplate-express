@@ -1,5 +1,12 @@
 let express = require('express');
+let bodyParser = require('body-parser');
 let app = express();
+
+// parse urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// parse application/json
+app.use(bodyParser.json);
 /*
 // #7
 app.use('/',function simpleLogger(req, res, next) {
