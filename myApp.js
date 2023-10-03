@@ -5,7 +5,7 @@ let app = express();
 // parse urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// parse application/json
+// # 11 parse application/json
 app.use(bodyParser.json);
 /*
 // #7
