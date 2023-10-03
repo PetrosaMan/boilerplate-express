@@ -70,7 +70,7 @@ app.get('/:word/echo', (req, res)=>{
   res.json({echo: req.params.word});
 });
 */
-
+/*
 // #10
 app.get('/name', function (req, res) {
 	const first = req.query.first;
@@ -78,7 +78,7 @@ app.get('/name', function (req, res) {
         res.json({ "name": first + ' ' + last });
     });
 
-
+*/
 
 
 
