@@ -24,7 +24,7 @@ app.use('/',function simpleLogger(req, res, next) {
 //});
 
 // #4
-app.use("/public", express.static( __dirname + "/public"));
+//app.use("/public", express.static( __dirname + "/public"));
 
 // #3
 //app.get("/", function(req, res) {
