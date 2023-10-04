@@ -83,35 +83,10 @@ app.get('/name', function (req, res) {
 // # 12
 app.post('/name', function(req, res){
   // handle the data in the object req.body
-  const firstname = req.body.first;
-  const lastname = req.body.last;  
-  res.json({ "name": firstname + lastname });
+  let Name = req.body.first + " " + req.body.last
+    
+  res.json({ "name": Name });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
  module.exports = app;
