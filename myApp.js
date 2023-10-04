@@ -80,6 +80,14 @@ app.get('/name', function (req, res) {
 
 */
 
+// # 12
+app.post('/name', function(req, res){
+  // handle the data in the object req.body
+  const first = req.body.first;
+  const last = req.body.last;
+  res.json({ "name": first + last });
+});
+
 
 
 
