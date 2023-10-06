@@ -4,12 +4,12 @@ let app = express();
 require('dotenv').config();
 
 // #1
-//console.log("Hello World");
+console.log("Hello World");
 
 // #2
-//app.get('/', (req, res) => {
-//  res.send("Hello Express");
-//});
+app.get('/', (req, res) => {
+  res.send("Hello Express");
+});
 
 // #11
 // parse urlencoded
@@ -32,7 +32,7 @@ app.use(bodyParser.json);
 
 // #3
 app.get('/', function(req, res) {
- res.sendFile(__dirname + "/views/index.html");
+res.sendFile(__dirname + "/views/index.html");
 });
 
 // #5 Serve JSON on a Specific Route
@@ -65,7 +65,7 @@ app.get('/:word/echo', (req, res)=>{
 //#10
 app.get('/name', function (req, res) {
 	const first = req.query.first;
-	const last = req.query.last;
+    const last = req.query.last;
         res.json({ "name": first + " " + last });
 });
 
