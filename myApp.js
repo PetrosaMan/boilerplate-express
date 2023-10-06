@@ -29,7 +29,7 @@ app.use('/',function simpleLogger(req, res, next) {
 app.use('/now', express.static(__dirname + '/now'));
 
 // #11 parse application/json
-app.use(bodyParser.json);
+app.use(bodyParser.json());
 
 // #3
 app.get('/', function(req, res) {
