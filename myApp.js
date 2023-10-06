@@ -72,7 +72,7 @@ app.get('/name', function (req, res) {
 // # 12
 app.post('/name', function(req, res){
   // handle the data in the object req.body
-  res.json({ "name": req.body.first + " " + req.body.last });
+  res.json({ name: req.body.first + " " + req.body.last });
 });
 
 
