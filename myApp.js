@@ -40,9 +40,9 @@ app.use('/now', express.static(__dirname + '/now'));
 //});
 
 // #6 Use the .env File
-app.get('/json', (req, res) => {
-   res.json({"message": process.env.MESSAGE_STYLE === "uppercase" ? "HELLO JSON" : "Hello json"});
-});
+//app.get('/json', (req, res) => {
+//   res.json({"message": process.env.MESSAGE_STYLE === "uppercase" ? "HELLO JSON" : "Hello json"});
+//});
 
 // # 8  chain middleware to create a time server
 app.get("/now",(req, res, next) => {
