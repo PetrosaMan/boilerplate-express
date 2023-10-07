@@ -21,8 +21,7 @@ app.use(function simpleLogger(req, res, next) {
 next();
 });
 
-// #11 mount the body parser middleware
-//app.use( bodyParser.json() );  is this required ????????    
+// #11 mount the body parser middleware  
 app.use(bodyParser.urlencoded({ extended: false }));
 
 
